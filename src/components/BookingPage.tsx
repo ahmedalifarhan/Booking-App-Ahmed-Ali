@@ -16,7 +16,7 @@ const BookingPage: React.FC = () => {
             Nights:
             <input
               type="number"
-              min={0}
+              min={1}
               value={nights}
               onChange={(e) => updateNights(Number(e.target.value))}
               className="border px-2 py-1 mt-1"
@@ -26,7 +26,7 @@ const BookingPage: React.FC = () => {
             Guests:
             <input
               type="number"
-              min={0}
+              min={1}
               value={guests}
               onChange={(e) => updateGuests(Number(e.target.value))}
               className="border px-2 py-1 mt-1"
